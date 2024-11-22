@@ -1,0 +1,12 @@
+{% extends "_base.html" %}
+
+{% block title %}Subscription{% endblock title %}
+
+{% block body %}
+<h2>Use below form to send us your Address.</h2>
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input name='submit' type="submit" value="Send">
+</form>
+{% endblock body %}
